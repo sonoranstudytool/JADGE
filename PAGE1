@@ -14,8 +14,7 @@
 		</style>
 	</head>
 	<body bgcolor="#000000">
-		
-		<!--writes the different pages 1-4-->
+		<!--writes the differe pages 1-4-->
 		<table>
 			<tr>
 				<td><button class="button" onclick="ADIZ()">ADIZ<br>TUNE</button></td>
@@ -131,10 +130,6 @@
 
         <!--sets each menu line and TD-->
 	<script>
-		function PAGE2() {
-		
-		}
-		
 		function UHF() {
 			document.getElementById("menuLine").innerHTML = "(NUM, \"A, R\", (\"T\"CSL)) <br>ARF: (ROID(\"F\"(NUM FREQ,OFF), (ALL OFF)),(CSL(\"A,B,C,D\")),OFF,\"T\"),(ALL OFF)+ <br>TUN: ((ROID\"I\",((OS)(FREQ)(MODE))),((\"I\")ALL),\"X\")";
             
