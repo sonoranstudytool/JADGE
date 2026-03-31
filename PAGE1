@@ -1,16 +1,19 @@
 <html>
 	<head>
+		<title>PAGE1</title>
 		<style>
-			.button { padding: 10px 10px;
-				  font-size: 16px;
-				  font-family: "Times New Roman";
-				  width: 100%;
-				  cursor: pointer; }
+			.button { 
+				padding: 10px 10px;
+				font-size: 16px;
+				font-family: "Times New Roman";
+				width: 100%;
+				cursor: pointer; }
 
-             		body { color: #04FD1D;
-			       font-weight: bold;
-			       font-size: 18px;
-			       font-family: "Courier New" }
+             body { 
+				color: #04FD1D;
+			    font-weight: bold;
+			    font-size: 18px;
+			    font-family: "Courier New" }
 		</style>
 	</head>
 
