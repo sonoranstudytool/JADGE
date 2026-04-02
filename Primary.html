@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <style>
+      /* Reset margins so the grid fits the full screen */
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        height: 100%; }
+
+      .grid-container {
+        display: grid;
+        /* Creates two equal columns and two equal rows */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100vh;
+        width: 100vw;}
+
+        /* Optional: Add borders or distinct colors to see the sections */
+        .section {
+          border: 1px solid blue;
+          padding: 20px;
+          overflow: auto; } /* Adds scrollbars if content is too large */
+
+        /* Specific styling for each section */
+        #top-left { background-color: #f0f0f0; }
+        #top-right { background-color: #e0e0e0; }
+        #bottom-left { background-color: #d0d0d0; }
+        #bottom-right { background-color: #c0c0c0; }
+    </style>
+  </head>
+
+  <body>
+      <div class="grid-container">
+        <div class="section" id="top-left">
+          <!-- Add your first set of code/content here -->
+          <button class="button"> Top Left </button>
+        </div>
+        
+        <div class="section" id="top-right">
+          <!-- Add your second set of code/content here -->
+          <button class="button"> Top Right </button>
+        </div>
+        
+        <div class="section" id="bottom-left">
+          <!-- Add your third set of code/content here -->
+          <button class="button"> Bottom Left </button>
+        </div>
+        
+        <div class="section" id="bottom-right">
+          <!-- Add your fourth set of code/content here -->
+          <button class="button"> Bottom Right </button>
+        </div>
+    </div>
+  </body>
+</html>
