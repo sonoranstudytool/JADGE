@@ -1,6 +1,6 @@
 <html>
   <head>
-    <style>
+    <style>      
       /* Reset margins so the grid fits the full screen */
       body {
         background-color: black; }
@@ -36,9 +36,24 @@
   </head>
 
   <body>
+    <script>
+      const newPage = new Querystring();
+      const setPage = newPage.get('page');
+
+      if (setPage === 'PAGE2') {
+        // Run edit function
+      } else if (setPage === 'PAGE3') {
+        // Run view function
+      } else if (setPage === 'PAGE4') {
+        //
+      } else {
+        //
+      }
+    </script>
+    
     <div class="grid-table">
-      <div class="column left"> 
-        <iframe src="PAGE1.html" width="100%" height="100%" style="border:none;"> </iframe>
+      <div class="column left">         
+        <iframe src="PAGE1.html?page=PAGE1" width="100%" height="100%" style="border:none;"> </iframe>
       </div>
       
       <div class="column middle">Middle Column (2x Larger)</div>
