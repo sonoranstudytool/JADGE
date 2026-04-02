@@ -10,9 +10,9 @@
 
       .grid-container {
         display: grid;
-        /* Creates two equal columns and two equal rows */
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* Middle is twice as wide as others */
+        gap: 10px;
         height: 100vh;
         width: 100vw;}
 
@@ -23,33 +23,32 @@
           overflow: auto; } /* Adds scrollbars if content is too large */
 
         /* Specific styling for each section */
-        #top-left { background-color: #f0f0f0; }
-        #top-right { background-color: #e0e0e0; }
-        #bottom-left { background-color: #d0d0d0; }
-        #bottom-right { background-color: #c0c0c0; }
+        #left { 
+          background-color: #f0f0f0; }
+      
+        #middle { 
+          background-color: #e0e0e0; }
+      
+        #right { 
+          background-color: #d0d0d0; }
     </style>
   </head>
 
   <body>
       <div class="grid-container">
-        <div class="section" id="top-left">
+        <div class="section" id="left">
           <!-- Add your first set of code/content here -->
-          <button class="button"> Top Left </button>
+          <button class="button"> Left </button>
         </div>
         
-        <div class="section" id="top-right">
+        <div class="section" id="middle">
           <!-- Add your second set of code/content here -->
-          <button class="button"> Top Right </button>
+          <button class="button"> Middle </button>
         </div>
         
-        <div class="section" id="bottom-left">
+        <div class="section" id="right">
           <!-- Add your third set of code/content here -->
-          <button class="button"> Bottom Left </button>
-        </div>
-        
-        <div class="section" id="bottom-right">
-          <!-- Add your fourth set of code/content here -->
-          <button class="button"> Bottom Right </button>
+          <button class="button"> Right </button>
         </div>
     </div>
   </body>
