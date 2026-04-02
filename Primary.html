@@ -9,13 +9,14 @@
           display: grid;
           /* Middle column is 2x the size of the outer columns */
           grid-template-columns: 1fr 2fr 1fr; 
-          gap: 10px;
+          gap: 5px;
           height: 100vh; /* Adjust height as needed */
         }
         
         .column {
-          padding: 20px;
+          padding: 5px;
           border: 1px solid blue;
+          height: 100vh;
         }
         
         .right {
@@ -38,7 +39,7 @@
   <body>
     <div class="grid-table">
       <div class="column left"> 
-        <iframe src="PAGE1.html" width="100%" style="border:none;"> </iframe>
+        <iframe src="PAGE1.html" width="100%" height="100%" style="border:none;"> </iframe>
       </div>
       
       <div class="column middle">Middle Column (2x Larger)</div>
