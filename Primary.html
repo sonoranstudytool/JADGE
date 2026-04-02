@@ -7,17 +7,19 @@
 
         .parent-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr 2fr 1fr); /* 3 unequal columns */
+          grid-template-columns: 1fr 2fr 1fr; /* 3 unequal columns */
           border-collapse: collapse;
           border: 1px solid blue;
+          gap: 10px;
           padding: 10px;
           height: 100vh;
           width: 100vw; }
         
         .right-col {
           display: grid;
-          grid-template-rows: 1fr 3fr 1fr; /* Divide right col into 3 unequal rows */
+          grid-template-rows: repeat(3, 1fr); /* Divide right col into 3 unequal rows */
           border-collapse: collapse;
+          gap: 10px;
           border: 1px solid blue; }
 
     </style>
