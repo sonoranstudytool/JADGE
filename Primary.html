@@ -8,48 +8,43 @@
         padding: 0;
         height: 100%; }
 
-      .grid-container {
-        display: grid;
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr; /* Middle is twice as wide as others */
-        gap: 10px;
-        height: 100vh;
-        width: 100vw;}
-
-        /* Optional: Add borders or distinct colors to see the sections */
-        .section {
+        .parent-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
           border: 1px solid blue;
-          padding: 20px;
-          overflow: auto; } /* Adds scrollbars if content is too large */
+          height: 300px;
+          /* height: 100vh;
+          width: 100vw; */ }
+        
+        .right-col {
+          display: grid;
+          grid-template-rows: repeat(3, 1fr); /* Divide right col into 3 rows */
+          border: 1px solid blue; }
 
-        /* Specific styling for each section */
-        #left { 
-          background-color: #f0f0f0; }
-      
-        #middle { 
-          background-color: #e0e0e0; }
-      
-        #right { 
-          background-color: #d0d0d0; }
     </style>
   </head>
 
   <body>
-      <div class="grid-container">
-        <div class="section" id="left">
-          <!-- Add your first set of code/content here -->
-          <button class="button"> Left </button>
+    <div class="parent-grid">
+      <div class="col"> 
+          Left Column 
+      </div>
+      
+      <div class="col">
+          Middle Column
+      </div>
+      
+      <div class="right-col">
+        <div>
+            Row 1
         </div>
-        
-        <div class="section" id="middle">
-          <!-- Add your second set of code/content here -->
-          <button class="button"> Middle </button>
+        <div>
+            Row 2
         </div>
-        
-        <div class="section" id="right">
-          <!-- Add your third set of code/content here -->
-          <button class="button"> Right </button>
+        <div>
+            Row 3
         </div>
+      </div>
     </div>
   </body>
 </html>
