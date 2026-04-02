@@ -2,6 +2,13 @@
 	<head>
 	    <title>Main Page</title>
 		<style>
+
+			.container {
+  				display: flex;
+  				justify-content: center; /* Centers horizontally */
+  				align-items: center;     /* Centers vertically */
+  				height: 100vh; }           /* Full viewport height for vertical demonstration */
+
 			.button { 
 				padding: 10px 10px;
 				font-size: 16px;
@@ -10,22 +17,31 @@
 				cursor: pointer; }
 			
 			body { 
-				color: #04FD1D;
+				background-color: #000000;  /* black background*/
+				color: #04FD1D; /* green text*/
 			    font-weight: bold;
 			    font-size: 18px;
 			    font-family: "Courier New" }
+
+			h1 {
+				  text-align: center; 
+				  text-decoration: underline;}
+
+			h2 {
+				  text-align: center; }
 		</style>
 	</head>
 	
 	<body>
 	    <h1>Welcome to the JADGE Study Tool</h1>
-		<h2>This is for educational purposes only and is a work in progress. Email: selena.neuberger.1@us.af.mil for issues/suggestions.</h2>
+		<h2>This is for educational purposes only and is a work in progress.</h2>
+		<h2>Email: selena.neuberger.1@us.af.mil for issues/suggestions.</h2>
 	
 	    <!-- The anchor tag makes the button a link in the same tab -->
 	    <a href="PAGE1.html">
-	        <button type="button">
-	            Launch JADGE
-	        </button>
+			<div class="container">
+		        <button> Launch JADGE </button>
+			</div>
 	    </a>
 	
 	    <!-- Optional: Open in a new tab 
