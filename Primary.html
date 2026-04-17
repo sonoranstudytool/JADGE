@@ -37,12 +37,12 @@
 
   <body>
     <script>
-      const newPage = new Querystring();
-      const setPage = newPage.get('page');
+       /*get page variable*/
+      var myPage = localStorage.getItem('varPage');
 
-      if (setPage === 'PAGE2') {
+      if (myPage = 2) {
         // Run edit function
-      } else if (setPage === 'PAGE3') {
+      } else if (myPage = 3) {
         // Run view function
       } else if (setPage === 'PAGE4') {
         //
