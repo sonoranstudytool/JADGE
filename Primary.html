@@ -36,21 +36,6 @@
   </head>
 
   <body>
-    <script>
-       /*get page variable*/
-      var myPage = localStorage.getItem('varPage');
-
-      if (myPage = 2) {
-        // Run edit function
-      } else if (myPage = 3) {
-        // Run view function
-      } else if (myPage = 4) {
-        //
-      } else {
-        //
-      }
-    </script>
-    
     <div class="grid-table">
       <div class="column left">         
         <iframe src="PAGE1.html?page=PAGE1" width="100%" height="100%" style="border:none;"> </iframe>
@@ -63,5 +48,24 @@
         <div class="row bottom">Bottom Row</div>
       </div>
     </div>
+
+
+     <script>
+       /*get page variable*/
+      var myPage = localStorage.getItem('varPage');
+
+      if (myPage = 2) {
+        // Run page 2 in left column
+        <div class="column left">         
+          <iframe src="PAGE2.html?page=PAGE2" width="100%" height="100%" style="border:none;"> </iframe>
+        </div>
+      } else if (myPage = 3) {
+        // Run view function
+      } else if (myPage = 4) {
+        //
+      } else {
+        //
+      }
+    </script>
   </body>
 </html>
